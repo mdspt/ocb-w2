@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.main {
+    border: 2px solid black;
+    width: 1728px;
+    height: 2249px;
+    background-color: #F6F4F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-1 {
+    /* border: 1px solid salmon; */
+    background-color: #2a2c2e;
+    width: 1200px;
+    height: 96px;
+    border-radius: 20px;
+    padding: 20px 24px;
+    margin: 24px 264px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    border: 1px solid black;
+}
+
+.item-1 {
+    height: 40px;
+    width: 166px;
+}
+
+.item-2 {
+    height: 24px;
+    width: 491px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.item-2>p {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+.item-2 p:nth-child(1) {
+    color: #F4D867;
+}
+
+.item-3 {
+    height: 56px;
+    width: 258px;
+}
+
+.con-2 {
+    /* border: 1px solid slateblue; */
+    background-color: #F4CE47;
+    width: 1728px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.con-2>p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #F4BA30;
+}
+
+.con-2 p:nth-child(3) {
+    color: #2A2C2E;
+}
+
+.con-3 {
+    border: 1px solid salmon;
+    width: 1729px;
+    height: 1847px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    border: 1px solid black;
+    height: 577px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.book-cover {
+    border: 1px solid black;
+}
+
+.book-cover img {
+    height: 357px;
+    width: 246px;
+}
+
+.description {
+    border: 1px solid black;
+    width: 246px;
+    height: 164px;
+}
+
+#rating {
+    width: 162px;
+    height: 32px;
+}
+
+.con-4 {
+    border: 1px solid slateblue;
+    width: 1248px;
+    height: 88px;
+}
