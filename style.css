@@ -2,8 +2,11 @@
 
 .main {
     /* border: 2px solid black; */
+    border: 1px solid salmon;
+
     /* width: 1728px; */
     /* height: 2249px; */
+    padding-top: 24px;
     background-color: #F6F4F0;
     display: flex;
     flex-direction: column;
@@ -15,10 +18,10 @@
 .con-1 {
     /* border: 1px solid salmon; */
     background-color: #2a2c2e;
-    width: 1200px;
+    /* width: 1200px; */
     border-radius: 20px;
     padding: 20px 24px;
-    margin: 24px 264px;
+    /* margin: 24px 264px; */
 
     display: flex;
     align-items: center;
@@ -47,12 +50,13 @@
     gap: 32px;
 }
 
-.item-2>p {
+.item-2 > span {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
+    margin: 0px;
 }
 
-.item-2 p:nth-child(1) {
+.item-2 span:nth-child(1) {
     color: #F4D867;
 }
 
@@ -75,7 +79,7 @@
     gap: 24px;
 }
 
-.con-2>p {
+.con-2 > span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 49px;
@@ -84,7 +88,7 @@
     color: #F4BA30;
 }
 
-.con-2 p:nth-child(3) {
+.con-2 > span:nth-child(3) {
     color: #2A2C2E;
 }
 
@@ -93,23 +97,22 @@
     width: 1729px;
     /* width: 100%; */
     background-color: #2A2C2E;
-    padding-top: 42px;
-    padding-bottom: 58px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
-.row-1,
-.row-2,
-.row-3 {
-    /* border: 1px solid salmon; */
+.card-container {
+    border: 1px solid salmon;
     /* height: 577px; */
-    
+    width: 898px;
+    margin-top: 42px;
+    margin-bottom: 58px;
+
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     
@@ -124,11 +127,8 @@
     gap: 8px;
 }
 
-/* .book-cover {
-    border: 1px solid black;
-} */
 
-.book-cover img {
+.book-cover > img {
     height: 357px;
     width: 246px;
     border-radius: 11.99px;
@@ -156,15 +156,16 @@
     height: 44px;
 }
 
-#desc-item>p {
+#desc-item > p {
     margin: 0px;
 }
 
-#desc-item p:nth-child(1) {
+#desc-item > p:nth-child(1) {
     height: 16px;
     width: 256px;
 
-    font-family: 'Inter', 'sans-serif';
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     size: 14px;
     line-height: 20px;
@@ -173,17 +174,17 @@
     color: #000000;
 }
 
-#desc-item p:nth-child(2) {
+#desc-item > p:nth-child(2) {
     width: 245px;
     height: 48px;
 
-    font-family: 'Inter', 'sans-serif';
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.15%;
     text-transform: capitalize;
-    color: rgba(0,0,0,0.87);
+    /* color: rgba(0,0,0,0.87); */
 }
 
 #rating img{
@@ -204,14 +205,14 @@
     flex-direction: column;
 }
 
-.up,
+/* .up,
 .up-1,
 .up-2,
 .down,
 .down-1,
 .down-2 {
     border: 1px solid transparent;
-}
+} */
 
 .up {
     width: 1248px;
@@ -277,9 +278,90 @@
 
 .down-1>p,
 .down-2>p {
-    font-family: 'Inter', san-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: #FFF;
+}
+
+
+/* Iphone View */
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100vw;
+        border: 1px solid salmon;
+        padding-top: 0px;
+        gap: 16px;
+    }
+
+    .main > div:nth-child(1) {
+        /* background-color: aqua; */
+        width: 100vw;
+        height: 413px;
+        /* margin: 36px 49px 55px; */
+    }
+
+    .main > div:nth-child(1) > div:nth-child(1) {
+        margin-top: 36px;
+    }
+    .main > div:nth-child(1) > div:nth-child(3) {
+        margin-bottom: 39px;
+    }
+    
+    .con-1 {
+        border: 1px solid greenyellow;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        border: 1px solid salmon;
+    }
+    
+    .con-1 > .item-2 {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        gap: 16px;
+    }
+
+
+
+    .con-2 {
+        border: 1px solid slateblue;
+    }
+
+    .main > div:nth-child(2) {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .main > div:nth-child(2) > span {
+        flex-shrink: 0;
+    }
+
+    .main > div:nth-child(3) {
+        width: 100vw;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    
+    .main > div:nth-child(3) > div:first-child {
+        width: 100vw;
+        margin-top: 38px 69px;
+    }
+
+    .main > div:nth-child(4) > {
+        width: 100vw;
+    }
+
+    .main > div:nth-child(4) > div * > div * {
+        width: 100vw;
+    }
+
+
 }
